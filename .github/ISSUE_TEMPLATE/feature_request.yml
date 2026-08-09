@@ -1,0 +1,36 @@
+name: "Feature Request"
+description: "Suggest a new feature or improvement for Visor"
+title: "[Feature]: "
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem or need"
+      description: "What problem would this feature solve?"
+      placeholder: "I find it difficult to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed solution"
+      description: "Describe the feature or improvement you would like."
+      placeholder: "Visor should..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives considered"
+      description: "How are you solving this today, if at all?"
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional context"
+      description: "Add screenshots, examples, or other useful details."

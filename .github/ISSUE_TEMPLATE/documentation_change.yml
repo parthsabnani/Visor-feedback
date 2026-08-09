@@ -1,0 +1,39 @@
+name: "Documentation Issue"
+description: "Suggest a correction or improvement to Visor documentation"
+title: "[Docs]: "
+labels: [documentation]
+assignees: []
+
+body:
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: "Type of documentation issue"
+      options:
+        - Typo or grammar
+        - Outdated content
+        - Missing content
+        - Unclear instructions
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: "Affected page or section"
+      description: "Provide the page URL or name, if applicable."
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Issue details"
+      description: "Explain what is incorrect, missing, or unclear and suggest a change if possible."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "Additional context"
+      description: "Add screenshots, examples, or references."
